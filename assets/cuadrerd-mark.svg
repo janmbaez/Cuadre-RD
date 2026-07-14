@@ -1,0 +1,9 @@
+<svg width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">CuadreRD mark</title>
+  <desc id="desc">A rounded teal app mark with a check and balance lines.</desc>
+  <rect width="96" height="96" rx="24" fill="#0F766E"/>
+  <path d="M26 52.5L39.2 65L70 31" stroke="white" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M25 28H52" stroke="#FFF1D8" stroke-width="6" stroke-linecap="round"/>
+  <path d="M25 40H43" stroke="#FFF1D8" stroke-width="6" stroke-linecap="round" opacity="0.86"/>
+  <circle cx="70" cy="66" r="8" fill="#D99832"/>
+</svg>
