@@ -1,159 +1,162 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Privacy Policy | CuadreRD</title>
-    <meta name="description" content="Privacy Policy for CuadreRD, a local-first iOS personal finance app for organizing user-authorized financial alert emails.">
-    <meta name="theme-color" content="#0f766e">
+    <title>Política de Privacidad | Cuadre RD</title>
+    <meta name="description" content="Política de Privacidad de Cuadre RD, app iOS de finanzas personales con procesamiento local y acceso opcional a alertas de correo.">
+    <meta name="theme-color" content="#0e756d">
     <link rel="icon" href="assets/cuadrerd-mark.svg" type="image/svg+xml">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <a class="skip-link" href="#main">Skip to content</a>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
 
     <header class="site-header" data-header>
-      <nav class="nav container" aria-label="Primary navigation">
-        <a class="brand" href="index.html" aria-label="CuadreRD home">
+      <nav class="nav container" aria-label="Navegación principal">
+        <a class="brand" href="index.html" aria-label="Inicio de Cuadre RD">
           <img src="assets/cuadrerd-mark.svg" alt="" width="36" height="36">
-          <span>CuadreRD</span>
+          <span>Cuadre RD</span>
         </a>
         <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="nav-links">
-          <span class="sr-only">Open navigation</span>
+          <span class="sr-only">Abrir navegación</span>
           <span></span>
           <span></span>
           <span></span>
         </button>
         <div class="nav-links" id="nav-links" data-nav-links>
-          <a href="index.html">Home</a>
-          <a href="privacy.html" aria-current="page">Privacy Policy</a>
-          <a href="terms.html">Terms of Service</a>
+          <a href="index.html">Inicio</a>
+          <a href="privacy.html" aria-current="page">Privacidad</a>
+          <a href="terms.html">Términos</a>
         </div>
       </nav>
     </header>
 
-    <main id="main">
-      <section class="page-hero section-pad">
+    <main id="contenido">
+      <section class="page-hero">
         <div class="container narrow reveal">
-          <p class="eyebrow">CuadreRD policy</p>
-          <h1>Privacy Policy</h1>
-          <p class="hero-text">Last updated: July 14, 2026</p>
+          <p class="eyebrow">Cuadre RD</p>
+          <h1>Política de Privacidad</h1>
+          <p class="hero-text">Última actualización: 15 de julio de 2026</p>
         </div>
       </section>
 
       <section class="section-pad compact">
         <div class="container policy-layout">
-          <aside class="policy-summary reveal" aria-label="Privacy summary">
-            <h2>Summary</h2>
-            <p>CuadreRD is designed to process personal finance data locally on your iPhone and use email access only with your authorization.</p>
+          <aside class="policy-summary reveal" aria-label="Resumen de privacidad">
+            <h2>Resumen</h2>
+            <p>Cuadre RD usa datos autorizados por ti para organizar tus finanzas. La app está diseñada para guardar tus datos financieros localmente en tu iPhone.</p>
           </aside>
 
           <article class="policy-content reveal">
-            <h2>1. Overview</h2>
+            <h2>1. Descripción general</h2>
             <p>
-              CuadreRD is a personal finance iOS app for users in the Dominican Republic. It helps users organize
-              bank alert emails, track expenses, detect balances when available, review uncertain transactions,
-              and use Siri shortcuts. This Privacy Policy explains how CuadreRD handles information when you use
-              the app.
+              Cuadre RD es una app iOS de finanzas personales para usuarios en la República Dominicana. La app
+              ayuda a organizar alertas bancarias, registrar movimientos manuales, revisar transacciones inciertas,
+              crear presupuestos, consultar balances estimados, usar widgets y ejecutar atajos de Siri.
             </p>
 
-            <h2>2. Email Access and OAuth</h2>
+            <h2>2. Acceso a Gmail y OAuth de Google</h2>
             <p>
-              CuadreRD may request access to your Gmail account through Google OAuth only after you choose to
-              connect it. The app uses user-authorized email data to identify financial alerts, such as bank
-              transaction notifications, balance notices, deposits, withdrawals, card charges, and similar
-              finance-related messages.
+              Si decides conectar Google, Cuadre RD solicita autorización mediante OAuth para usar acceso de solo
+              lectura a Gmail. El alcance utilizado es <code>https://www.googleapis.com/auth/gmail.readonly</code>.
+              Este permiso se usa para buscar correos que parezcan alertas financieras y convertirlos en registros
+              locales de la app.
             </p>
             <p>
-              CuadreRD does not request email access to sell data, build advertising profiles, or read unrelated
-              messages for marketing. OAuth access is used to support the app features you choose to enable.
-              You can revoke Google access at any time from your Google Account permissions page.
-            </p>
-
-            <h2>3. iCloud Mail and Other Mail Data</h2>
-            <p>
-              If you use iCloud Mail or another supported mail source, CuadreRD may process user-provided or
-              user-authorized mail data to identify financial alerts. Processing is limited to helping the app
-              recognize and organize finance-related notifications.
+              Cuadre RD no usa Gmail para enviar correos, modificar correos, borrar correos, crear una cuenta social,
+              vender datos ni leer mensajes con fines publicitarios. El acceso a Gmail es opcional y se usa para
+              que puedas procesar tus propios correos financieros.
             </p>
 
-            <h2>4. Information Processed</h2>
-            <p>Depending on the features you use, CuadreRD may process the following categories of information:</p>
+            <h2>3. iCloud Mail y otros correos autorizados</h2>
+            <p>
+              Cuadre RD también puede conectarse a iCloud Mail mediante IMAP si proporcionas tu correo de iCloud y
+              una contraseña específica de Apple. Esa conexión se usa para buscar alertas financieras en tu buzón y
+              procesarlas dentro de la app. Las credenciales sensibles se guardan usando mecanismos del sistema,
+              como el llavero de iOS cuando corresponde.
+            </p>
+
+            <h2>4. Datos que puede procesar la app</h2>
+            <p>Dependiendo de las funciones que uses, Cuadre RD puede procesar:</p>
             <ul>
-              <li>Email metadata and content needed to identify financial alert messages.</li>
-              <li>Transaction details found in alerts, such as merchant names, dates, amounts, account references, categories, and balances when included by the bank.</li>
-              <li>App data you create or edit, such as review decisions, categories, notes, settings, shortcuts, and preferences.</li>
-              <li>Technical information needed for authentication, such as OAuth tokens, when required to keep your connected account working.</li>
+              <li>Contenido y metadatos de correos autorizados necesarios para identificar alertas bancarias.</li>
+              <li>Montos, fechas, comercios, bancos, productos, referencias, categorías y balances incluidos en alertas.</li>
+              <li>Movimientos manuales creados por ti, incluyendo ingresos, gastos, ahorros y transferencias.</li>
+              <li>Presupuestos, metas, reglas de categoría, correcciones, revisiones y preferencias de la app.</li>
+              <li>Datos técnicos necesarios para autenticación, como tokens OAuth o credenciales de correo configuradas por ti.</li>
+              <li>Snapshots locales usados por widgets, Siri y vistas resumidas dentro del ecosistema iOS.</li>
             </ul>
 
-            <h2>5. Local and On-Device Storage</h2>
+            <h2>5. Almacenamiento local</h2>
             <p>
-              CuadreRD is designed as a local-first app. Personal finance records are intended to be stored on
-              your device unless you choose to use Apple or system features that sync, back up, or transfer app
-              data. The app does not require a CuadreRD server to sell, broker, or monetize your financial data.
+              Cuadre RD está diseñada con un enfoque local-first. Los movimientos financieros, reglas, correcciones,
+              presupuestos y snapshots se guardan en el dispositivo. Algunos datos pueden compartirse localmente con
+              extensiones de la misma app, como widgets, mediante los mecanismos de iOS. Si activas respaldos,
+              sincronización o transferencia del sistema operativo, esos datos pueden manejarse según la configuración
+              de Apple y de tu dispositivo.
             </p>
 
-            <h2>6. How Information Is Used</h2>
-            <p>CuadreRD uses processed information to:</p>
+            <h2>6. Uso de la información</h2>
+            <p>La información se usa para:</p>
             <ul>
-              <li>Detect and organize bank alert emails.</li>
-              <li>Create and update personal transaction records.</li>
-              <li>Estimate balances when balance information appears in supported alerts.</li>
-              <li>Flag uncertain transactions for the Review Inbox.</li>
-              <li>Support Siri shortcuts and other iOS app features you enable.</li>
-              <li>Improve reliability, security, and user control inside the app.</li>
+              <li>Detectar y organizar alertas financieras de bancos o servicios soportados.</li>
+              <li>Crear registros locales de movimientos y clasificarlos por tipo o categoría.</li>
+              <li>Mostrar presupuestos, balances estimados, metas, tendencias, pagos recurrentes y pronósticos.</li>
+              <li>Separar transacciones inciertas en Revisar o Smart Review.</li>
+              <li>Actualizar widgets, atajos de Siri y vistas locales cuando esas funciones estén disponibles.</li>
+              <li>Mejorar la confiabilidad de la experiencia dentro de la app.</li>
             </ul>
 
-            <h2>7. Data Sharing and Sale</h2>
+            <h2>7. Venta de datos, anuncios y tracking</h2>
             <p>
-              CuadreRD does not sell your personal information. CuadreRD does not use your financial alert data
-              for third-party advertising. Information is not shared with banks, advertisers, data brokers, or
-              unrelated third parties for their own marketing purposes.
+              Cuadre RD no vende tu información personal. La app no usa tus alertas financieras para publicidad de
+              terceros, no incluye anuncios, no solicita permiso de tracking publicitario y no comparte tu historial
+              financiero con data brokers.
             </p>
 
-            <h2>8. User Control, Sign Out, and Deletion</h2>
+            <h2>8. Control del usuario</h2>
             <p>
-              You control whether to connect mail accounts and can disconnect or sign out from supported accounts
-              in the app when those controls are available. You may delete app data from within the app or by
-              deleting the app from your device, subject to any iOS backups or sync services you have enabled.
-            </p>
-            <p>
-              For Google accounts, you can also revoke CuadreRD's access from your Google Account security settings.
-              After access is revoked, CuadreRD will no longer be able to access new Gmail data through that OAuth
-              connection unless you authorize it again.
+              Puedes usar Cuadre RD manualmente sin conectar Gmail o iCloud Mail. También puedes cerrar sesión,
+              desconectar cuentas, borrar datos locales dentro de la app cuando esa opción esté disponible o eliminar
+              la app del dispositivo. Para Google, puedes revocar el acceso desde la página de permisos de tu Cuenta
+              de Google. Después de revocar el acceso, Cuadre RD no podrá leer nuevos datos de Gmail a menos que lo
+              autorices otra vez.
             </p>
 
-            <h2>9. Data Accuracy</h2>
+            <h2>9. Exactitud de los datos</h2>
             <p>
-              CuadreRD relies on the content and format of bank alert messages. Detected transactions, categories,
-              balances, taxes, forecasts, or summaries may be incomplete or incorrect. You should review important
-              information directly with your financial institution.
+              Cuadre RD depende del contenido y formato de las alertas. Movimientos, balances, categorías, impuestos,
+              pronósticos, scores o resúmenes pueden ser incompletos, duplicados, desactualizados o incorrectos.
+              Verifica información importante directamente con tu banco, emisor de tarjeta, contador u otra fuente
+              oficial.
             </p>
 
-            <h2>10. Security</h2>
+            <h2>10. Seguridad</h2>
             <p>
-              CuadreRD uses platform security features available on iOS and follows a local-first approach to
-              reduce unnecessary data exposure. No app can guarantee perfect security, and you are responsible
-              for keeping your device, Apple ID, Google Account, and passcodes secure.
+              La app usa capacidades de seguridad de iOS, incluyendo almacenamiento local y, cuando está habilitado,
+              bloqueo con Face ID o código. Ningún sistema es perfecto. Tú eres responsable de proteger tu dispositivo,
+              Apple ID, Cuenta de Google, correos, contraseñas y copias de seguridad.
             </p>
 
-            <h2>11. Children's Privacy</h2>
+            <h2>11. Menores de edad</h2>
             <p>
-              CuadreRD is intended for personal finance organization and is not directed to children. If you
-              believe a child has provided personal information through the app, contact the app developer through
-              the support channel listed with the app.
+              Cuadre RD está dirigida a organización financiera personal y no está diseñada para menores de edad. Si
+              crees que un menor proporcionó datos personales mediante la app, contacta al desarrollador por el canal
+              de soporte asociado a la app.
             </p>
 
-            <h2>12. Changes to This Policy</h2>
+            <h2>12. Cambios a esta política</h2>
             <p>
-              This Privacy Policy may be updated from time to time. When it changes, the Last updated date above
-              will be revised. Continued use of CuadreRD after an update means you accept the updated policy.
+              Podemos actualizar esta Política de Privacidad ocasionalmente. Cuando cambie, actualizaremos la fecha
+              de última actualización. El uso continuo de Cuadre RD después de una actualización significa que aceptas
+              la versión actualizada.
             </p>
 
-            <h2>13. Contact</h2>
+            <h2>13. Contacto</h2>
             <p>
-              For privacy questions or requests, contact the CuadreRD developer through the support channel
-              provided with the app listing or repository where this website is published.
+              Para preguntas de privacidad, usa el canal de soporte indicado en la ficha de la app o en el repositorio
+              donde se publica este sitio.
             </p>
           </article>
         </div>
@@ -165,18 +168,18 @@
         <div>
           <a class="brand footer-brand" href="index.html">
             <img src="assets/cuadrerd-mark.svg" alt="" width="32" height="32">
-            <span>CuadreRD</span>
+            <span>Cuadre RD</span>
           </a>
-          <p>Privacy-first, local-first personal finance organization for iPhone users in the Dominican Republic.</p>
+          <p>Organización financiera local-first para iPhone, creada para alertas bancarias dominicanas.</p>
         </div>
-        <nav class="footer-links" aria-label="Footer navigation">
-          <a href="index.html">Home</a>
-          <a href="privacy.html">Privacy Policy</a>
-          <a href="terms.html">Terms of Service</a>
+        <nav class="footer-links" aria-label="Navegación del pie de página">
+          <a href="index.html">Inicio</a>
+          <a href="privacy.html">Privacidad</a>
+          <a href="terms.html">Términos</a>
         </nav>
       </div>
       <div class="container footer-bottom">
-        <small>&copy; <span data-year></span> CuadreRD. All rights reserved.</small>
+        <small>&copy; <span data-year></span> Cuadre RD. Todos los derechos reservados.</small>
       </div>
     </footer>
 

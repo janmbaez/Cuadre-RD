@@ -1,99 +1,107 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>CuadreRD | Personal Finance for the Dominican Republic</title>
-    <meta name="description" content="CuadreRD is a privacy-first iOS finance app that helps users in the Dominican Republic organize bank alert emails, track expenses, detect balances, and review transactions.">
-    <meta name="theme-color" content="#0f766e">
+    <title>Cuadre RD | Finanzas personales para alertas bancarias dominicanas</title>
+    <meta name="description" content="Cuadre RD es una app iOS para organizar alertas bancarias, presupuestos, balances, metas y revisiones financieras desde tu iPhone.">
+    <meta name="theme-color" content="#0e756d">
     <link rel="icon" href="assets/cuadrerd-mark.svg" type="image/svg+xml">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <a class="skip-link" href="#main">Skip to content</a>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
 
     <header class="site-header" data-header>
-      <nav class="nav container" aria-label="Primary navigation">
-        <a class="brand" href="index.html" aria-label="CuadreRD home">
+      <nav class="nav container" aria-label="Navegación principal">
+        <a class="brand" href="index.html" aria-label="Inicio de Cuadre RD">
           <img src="assets/cuadrerd-mark.svg" alt="" width="36" height="36">
-          <span>CuadreRD</span>
+          <span>Cuadre RD</span>
         </a>
         <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="nav-links">
-          <span class="sr-only">Open navigation</span>
+          <span class="sr-only">Abrir navegación</span>
           <span></span>
           <span></span>
           <span></span>
         </button>
         <div class="nav-links" id="nav-links" data-nav-links>
-          <a href="index.html" aria-current="page">Home</a>
-          <a href="privacy.html">Privacy Policy</a>
-          <a href="terms.html">Terms of Service</a>
+          <a href="index.html" aria-current="page">Inicio</a>
+          <a href="privacy.html">Privacidad</a>
+          <a href="terms.html">Términos</a>
         </div>
       </nav>
     </header>
 
-    <main id="main">
-      <section class="hero section-pad">
+    <main id="contenido">
+      <section class="hero">
         <div class="container hero-grid">
           <div class="hero-copy reveal">
-            <p class="eyebrow">Personal finance for Dominican Republic bank alerts</p>
-            <h1>Understand your money without giving up control of your data.</h1>
+            <p class="eyebrow">Finanzas dominicanas, desde tu iPhone</p>
+            <h1>Alertas, presupuesto y cuadre diario en un solo lugar.</h1>
             <p class="hero-text">
-              CuadreRD is an iOS app that helps you organize bank alert emails, track expenses,
-              detect bank balances, review uncertain transactions, and use Siri shortcuts for
-              everyday finance workflows.
+              Cuadre RD organiza tus movimientos financieros a partir de alertas bancarias autorizadas,
+              transacciones manuales y vistas locales para ayudarte a entender tu mes sin entregar el control
+              de tus datos.
             </p>
-            <div class="hero-actions" aria-label="Primary actions">
-              <a class="btn btn-primary" href="#cta">Use CuadreRD URLs for OAuth</a>
-              <a class="btn btn-secondary" href="privacy.html">Read Privacy Policy</a>
+            <div class="hero-actions" aria-label="Acciones principales">
+              <a class="btn btn-primary" href="privacy.html">Leer política de privacidad</a>
+              <a class="btn btn-secondary" href="#funciones">Ver funciones</a>
             </div>
-            <div class="trust-row" aria-label="Privacy highlights">
-              <span>Local-first</span>
-              <span>User-authorized email access</span>
-              <span>No sale of personal data</span>
+            <div class="trust-row" aria-label="Puntos de confianza">
+              <span>Gmail opcional de solo lectura</span>
+              <span>Procesamiento local</span>
+              <span>Sin anuncios ni venta de datos</span>
             </div>
           </div>
 
-          <div class="phone-stage reveal" aria-label="CuadreRD app preview">
-            <div class="phone-shell">
-              <div class="phone-top"></div>
-              <div class="app-screen">
-                <div class="screen-header">
+          <div class="app-preview reveal" aria-label="Vista conceptual de Cuadre RD">
+            <div class="device">
+              <div class="device-notch"></div>
+              <div class="device-screen">
+                <div class="screen-top">
                   <div>
-                    <span class="screen-label">Today</span>
-                    <strong>RD$ 42,850.20</strong>
+                    <small>Cuadre de hoy</small>
+                    <strong>RD$ 42,850</strong>
                   </div>
-                  <span class="status-dot" aria-hidden="true"></span>
+                  <span class="sync-badge">Local</span>
                 </div>
-                <div class="balance-card">
-                  <span>Detected balance</span>
-                  <strong>Banco alerts synced</strong>
-                  <small>Updated from authorized mail only</small>
+                <div class="pulse-card">
+                  <span>Movimiento actual</span>
+                  <strong>APAP · Qik · BHD · Cibao · Popular · Apple</strong>
+                  <p>Alertas detectadas con permiso del usuario.</p>
                 </div>
-                <div class="inbox-card">
+                <div class="review-card">
                   <div>
-                    <span class="pill">Review Inbox</span>
-                    <strong>3 uncertain transactions</strong>
+                    <span>Revisar</span>
+                    <strong>3 filas dudosas</strong>
                   </div>
-                  <span class="review-chip" aria-hidden="true">Review</span>
+                  <b>Smart Review</b>
                 </div>
-                <div class="transaction-list" aria-label="Example transactions">
-                  <div class="transaction">
-                    <span class="icon income" aria-hidden="true"></span>
-                    <div>
-                      <strong>Payroll deposit</strong>
-                      <small>Matched from bank alert</small>
-                    </div>
-                    <b>+RD$ 28,000</b>
+                <div class="mini-grid">
+                  <div>
+                    <span>Gastado</span>
+                    <strong>RD$ 18,420</strong>
                   </div>
-                  <div class="transaction">
-                    <span class="icon expense" aria-hidden="true"></span>
-                    <div>
-                      <strong>Supermarket</strong>
-                      <small>Expense category suggested</small>
-                    </div>
-                    <b>-RD$ 3,420</b>
+                  <div>
+                    <span>Score</span>
+                    <strong>84</strong>
                   </div>
+                </div>
+                <div class="transaction-row">
+                  <span class="dot income"></span>
+                  <div>
+                    <strong>Nómina</strong>
+                    <small>Ingreso clasificado</small>
+                  </div>
+                  <b>+RD$ 28,000</b>
+                </div>
+                <div class="transaction-row">
+                  <span class="dot expense"></span>
+                  <div>
+                    <strong>Supermercado</strong>
+                    <small>Categoría sugerida</small>
+                  </div>
+                  <b>-RD$ 3,420</b>
                 </div>
               </div>
             </div>
@@ -101,80 +109,112 @@
         </div>
       </section>
 
-      <section class="section-pad compact">
+      <section class="section-pad compact" id="funciones">
         <div class="container">
           <div class="section-heading reveal">
-            <p class="eyebrow">Built for daily clarity</p>
-            <h2>A practical finance workspace for alerts, balances, and reviews.</h2>
+            <p class="eyebrow">Hecho para el flujo real</p>
+            <h2>Sincroniza, revisa, clasifica y mira tu mes.</h2>
+            <p>
+              Cuadre RD combina importación opcional, registro manual y vistas de presupuesto para que puedas
+              mantener un historial financiero útil desde el teléfono.
+            </p>
           </div>
+
           <div class="feature-grid">
             <article class="feature-card reveal">
-              <span class="feature-icon">01</span>
-              <h3>Bank alert organization</h3>
-              <p>CuadreRD scans user-authorized Gmail or iCloud Mail messages to identify financial alerts and turn them into organized transaction records.</p>
+              <span class="feature-index">01</span>
+              <h3>Alertas bancarias</h3>
+              <p>Busca notificaciones de bancos y servicios soportados como APAP, Qik, BHD, Cibao, Popular, Banreservas y Apple.</p>
             </article>
             <article class="feature-card reveal">
-              <span class="feature-icon">02</span>
-              <h3>Expense tracking</h3>
-              <p>Review income, spending, categories, merchants, and timing so your day-to-day money activity is easier to understand.</p>
+              <span class="feature-index">02</span>
+              <h3>Gmail de solo lectura</h3>
+              <p>La conexión con Google es opcional y usa el alcance <code>gmail.readonly</code>. La app no envía, borra ni modifica correos.</p>
             </article>
             <article class="feature-card reveal">
-              <span class="feature-icon">03</span>
-              <h3>Bank balance tracking</h3>
-              <p>When supported alerts include balance information, CuadreRD can help detect and display estimated account balances from those messages.</p>
+              <span class="feature-index">03</span>
+              <h3>iCloud Mail</h3>
+              <p>También puede leer alertas desde iCloud Mail usando IMAP y una contraseña específica de Apple configurada por el usuario.</p>
             </article>
             <article class="feature-card reveal">
-              <span class="feature-icon">04</span>
-              <h3>Review Inbox</h3>
-              <p>Transactions that need a second look are separated into a Review Inbox, giving you control before they affect your records.</p>
+              <span class="feature-index">04</span>
+              <h3>Revisión inteligente</h3>
+              <p>Las filas inciertas pasan a Revisar para corregir categoría, comercio o información antes de confiar en el resumen.</p>
             </article>
             <article class="feature-card reveal">
-              <span class="feature-icon">05</span>
-              <h3>Siri shortcuts</h3>
-              <p>Use iOS shortcuts to speed up common finance actions and keep CuadreRD close to your daily routines.</p>
+              <span class="feature-index">05</span>
+              <h3>Presupuestos y metas</h3>
+              <p>Crea presupuestos, mide ritmo de gasto, define metas y conecta sobrantes del presupuesto con objetivos personales.</p>
             </article>
             <article class="feature-card reveal">
-              <span class="feature-icon">06</span>
-              <h3>Local-first privacy</h3>
-              <p>Financial records are designed to stay on your device. CuadreRD does not sell personal information or operate as a bank.</p>
+              <span class="feature-index">06</span>
+              <h3>Pronóstico y pagos</h3>
+              <p>Consulta cierre de mes, pagos recurrentes detectados, flujo de efectivo y acciones sugeridas para decidir mejor.</p>
+            </article>
+            <article class="feature-card reveal">
+              <span class="feature-index">07</span>
+              <h3>Balances bancarios</h3>
+              <p>Cuando una alerta incluye balance, Cuadre RD puede mostrar estimados de balances recientes por banco o producto.</p>
+            </article>
+            <article class="feature-card reveal">
+              <span class="feature-index">08</span>
+              <h3>Siri y widgets</h3>
+              <p>Usa atajos de Siri, widgets y snapshots locales para consultar gastos, balances, presupuesto, metas y revisiones.</p>
             </article>
           </div>
         </div>
       </section>
 
       <section class="section-pad tinted">
-        <div class="container split-section">
+        <div class="container split">
           <div class="reveal">
-            <p class="eyebrow">Mail sync, explained plainly</p>
-            <h2>CuadreRD uses authorized email access only to find your financial alerts.</h2>
+            <p class="eyebrow">Privacidad primero</p>
+            <h2>Tu historial financiero está diseñado para quedarse en tu dispositivo.</h2>
           </div>
-          <div class="content-stack reveal">
+          <div class="copy-stack reveal">
             <p>
-              If you connect Gmail, CuadreRD requests OAuth permission so the app can read relevant email data
-              and identify messages that look like bank alerts. If you use iCloud Mail, the app can process
-              user-provided or authorized mail data for the same purpose.
+              Los movimientos, reglas, correcciones, presupuestos y snapshots se guardan localmente en el iPhone.
+              La app puede compartir un resumen con su widget mediante el grupo de app de iOS, pero no opera un
+              banco, no custodia dinero y no vende información personal.
             </p>
             <p>
-              The goal is not to replace your bank, move money, or read unrelated messages for advertising.
-              The goal is to help you convert alerts you already receive into a more useful personal finance view.
+              Puedes usar Cuadre RD manualmente sin conectar Gmail. Si conectas Google o iCloud Mail, el acceso
+              se usa para encontrar tus propias alertas financieras y convertirlas en filas locales de presupuesto.
             </p>
           </div>
         </div>
       </section>
 
-      <section class="section-pad" id="cta">
+      <section class="section-pad">
+        <div class="container proof-grid">
+          <div class="proof-card reveal">
+            <h3>No es un banco</h3>
+            <p>Cuadre RD no mueve dinero, no presta, no invierte, no ofrece cuentas y no sustituye los estados oficiales de tu banco.</p>
+          </div>
+          <div class="proof-card reveal">
+            <h3>Datos estimados</h3>
+            <p>Balances, impuestos, categorías, forecasts y scores pueden ser incompletos. Siempre confirma información importante con la fuente oficial.</p>
+          </div>
+          <div class="proof-card reveal">
+            <h3>Control del usuario</h3>
+            <p>Puedes cerrar sesión, revocar permisos de Google, borrar datos locales o eliminar la app del dispositivo cuando quieras.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-pad final-cta">
         <div class="container cta-panel reveal">
           <div>
-            <p class="eyebrow">Public app information</p>
-            <h2>OAuth-ready pages for CuadreRD.</h2>
+            <p class="eyebrow">Páginas públicas para OAuth</p>
+            <h2>Información clara para revisión de Google y App Store.</h2>
             <p>
-              This site provides the public homepage, privacy policy, and terms required for Google Cloud OAuth
-              app configuration and consent review.
+              Este sitio contiene la página principal, la Política de Privacidad y los Términos de Servicio
+              públicos de Cuadre RD.
             </p>
           </div>
           <div class="cta-actions">
-            <a class="btn btn-primary" href="privacy.html">Privacy Policy</a>
-            <a class="btn btn-secondary" href="terms.html">Terms of Service</a>
+            <a class="btn btn-primary" href="privacy.html">Privacidad</a>
+            <a class="btn btn-secondary" href="terms.html">Términos</a>
           </div>
         </div>
       </section>
@@ -185,18 +225,18 @@
         <div>
           <a class="brand footer-brand" href="index.html">
             <img src="assets/cuadrerd-mark.svg" alt="" width="32" height="32">
-            <span>CuadreRD</span>
+            <span>Cuadre RD</span>
           </a>
-          <p>Privacy-first, local-first personal finance organization for iPhone users in the Dominican Republic.</p>
+          <p>Organización financiera local-first para iPhone, creada para alertas bancarias dominicanas.</p>
         </div>
-        <nav class="footer-links" aria-label="Footer navigation">
-          <a href="index.html">Home</a>
-          <a href="privacy.html">Privacy Policy</a>
-          <a href="terms.html">Terms of Service</a>
+        <nav class="footer-links" aria-label="Navegación del pie de página">
+          <a href="index.html">Inicio</a>
+          <a href="privacy.html">Privacidad</a>
+          <a href="terms.html">Términos</a>
         </nav>
       </div>
       <div class="container footer-bottom">
-        <small>&copy; <span data-year></span> CuadreRD. All rights reserved.</small>
+        <small>&copy; <span data-year></span> Cuadre RD. Todos los derechos reservados.</small>
       </div>
     </footer>
 

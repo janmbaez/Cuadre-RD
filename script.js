@@ -8,15 +8,20 @@
     node.textContent = new Date().getFullYear();
   });
 
-  const setHeaderState = () => {
+  const updateHeader = () => {
     if (!header) return;
     header.classList.toggle("is-scrolled", window.scrollY > 8);
   };
 
-  setHeaderState();
-  window.addEventListener("scroll", setHeaderState, { passive: true });
+  updateHeader();
+  window.addEventListener("scroll", updateHeader, { passive: true });
 
   if (toggle && navLinks) {
+    const closeMenu = () => {
+      navLinks.classList.remove("is-open");
+      toggle.setAttribute("aria-expanded", "false");
+    };
+
     toggle.addEventListener("click", () => {
       const isOpen = navLinks.classList.toggle("is-open");
       toggle.setAttribute("aria-expanded", String(isOpen));
@@ -24,15 +29,13 @@
 
     navLinks.addEventListener("click", (event) => {
       if (event.target instanceof HTMLAnchorElement) {
-        navLinks.classList.remove("is-open");
-        toggle.setAttribute("aria-expanded", "false");
+        closeMenu();
       }
     });
 
     document.addEventListener("keydown", (event) => {
       if (event.key === "Escape") {
-        navLinks.classList.remove("is-open");
-        toggle.setAttribute("aria-expanded", "false");
+        closeMenu();
       }
     });
   }

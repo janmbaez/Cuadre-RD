@@ -1,41 +1,35 @@
-# CuadreRD Website
+# Sitio web de Cuadre RD
 
-Static GitHub Pages-ready website for CuadreRD, an iOS personal finance app for users in the Dominican Republic.
+Sitio estático listo para GitHub Pages de Cuadre RD, una app iOS de organización financiera personal para usuarios en la República Dominicana.
 
-The site includes:
+Incluye:
 
-- `index.html` - public application homepage
-- `privacy.html` - public Privacy Policy
-- `terms.html` - public Terms of Service
-- `styles.css` - shared responsive styling
-- `script.js` - small navigation and animation enhancements
-- `assets/` - lightweight visual assets
+- `index.html` - página pública principal de la aplicación
+- `privacy.html` - Política de Privacidad pública
+- `terms.html` - Términos de Servicio públicos
+- `styles.css` - estilos responsivos compartidos
+- `script.js` - navegación móvil, estado del header y animaciones ligeras
+- `assets/` - asset visual ligero
 
-## 1. Open the Site Locally
+## 1. Abrir localmente
 
-No backend, framework, or build step is required.
+No requiere backend, framework ni build step.
 
-Open `index.html` directly in your browser:
-
-```text
-index.html
-```
-
-You can also run a simple local static server from this folder:
+Puedes abrir `index.html` directamente en el navegador o levantar un servidor estático simple:
 
 ```bash
 python3 -m http.server 8000
 ```
 
-Then visit:
+Luego visita:
 
 ```text
 http://localhost:8000/
 ```
 
-## 2. Upload to GitHub
+## 2. Subir a GitHub
 
-Create a new GitHub repository, then upload these files to the repository root:
+Sube estos archivos a la raíz del repositorio:
 
 ```text
 index.html
@@ -47,36 +41,39 @@ README.md
 assets/
 ```
 
-If you are using git from the command line:
+Con git:
 
 ```bash
-git init
 git add .
-git commit -m "Add CuadreRD public website"
-git branch -M main
-git remote add origin https://github.com/YOUR_GITHUB_USERNAME/YOUR_REPO_NAME.git
-git push -u origin main
+git commit -m "Update Cuadre RD website in Spanish"
+git push
 ```
 
-## 3. Enable GitHub Pages
+## 3. Activar GitHub Pages
 
-1. Open your repository on GitHub.
-2. Go to **Settings**.
-3. Select **Pages**.
-4. Under **Build and deployment**, choose **Deploy from a branch**.
-5. Select the `main` branch and `/ (root)` folder.
-6. Save the settings.
+1. Abre el repositorio en GitHub.
+2. Ve a **Settings**.
+3. Entra a **Pages**.
+4. En **Build and deployment**, selecciona **Deploy from a branch**.
+5. Selecciona la rama `main` y la carpeta `/ (root)`.
+6. Guarda los cambios.
 
-GitHub will publish the website after the Pages deployment finishes.
+GitHub publicará el sitio cuando termine el deployment de Pages.
 
-## 4. Google Cloud OAuth URLs
+## 4. URLs para Google Cloud OAuth
 
-Use these public URLs in Google Cloud OAuth app settings after GitHub Pages is enabled:
+Usa estas URLs públicas en la configuración de OAuth de Google Cloud:
 
 ```text
-Homepage URL: https://YOUR_GITHUB_USERNAME.github.io/YOUR_REPO_NAME/
-Privacy Policy URL: https://YOUR_GITHUB_USERNAME.github.io/YOUR_REPO_NAME/privacy.html
-Terms of Service URL: https://YOUR_GITHUB_USERNAME.github.io/YOUR_REPO_NAME/terms.html
+Application homepage: https://YOUR_GITHUB_USERNAME.github.io/YOUR_REPO_NAME/
+Privacy Policy: https://YOUR_GITHUB_USERNAME.github.io/YOUR_REPO_NAME/privacy.html
+Terms of Service: https://YOUR_GITHUB_USERNAME.github.io/YOUR_REPO_NAME/terms.html
 ```
 
-Replace `YOUR_GITHUB_USERNAME` and `YOUR_REPO_NAME` with your actual GitHub username and repository name.
+Para este repositorio:
+
+```text
+Application homepage: https://janmbaez.github.io/Cuadre-RD/
+Privacy Policy: https://janmbaez.github.io/Cuadre-RD/privacy.html
+Terms of Service: https://janmbaez.github.io/Cuadre-RD/terms.html
+```
